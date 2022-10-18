@@ -3,6 +3,7 @@
 :root {
     --dark: #0D0D2B;
     --white: #FFFFFF;
+    --white-rgb: 255, 255, 255;
     --blue: #3671E9;
     --purple: #2B076E;
 }
@@ -71,3 +72,67 @@ body {
     color: var(--white);
     background-color: var(--purple);
 }
+.wrapper {
+    max-width: 1202px;
+    padding-right:15px;
+    padding-left:15px;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+.main-text {
+    flex: 0 0 600px;
+}
+.main-text--sale {
+    background-color: rgba(var(--white-rgb), 0.1);
+    display: inline-block;
+    padding: 8px 12px 8px 4px;
+    border-radius: 32px;
+
+}
+
+.main-text--sale span {
+    background-color: var(--white);
+    color: var(--dark); 
+    padding: 6px 19px;
+    border-radius: 32px;
+     margin-right: 13px;
+     font-weight: 500;
+}
+.main-text--title {
+    font-size: 64px;
+    font-weight: 700; 
+    margin-top: 26px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+.main-text--description {
+    color: #E0E0E0;
+    line-height:1.6; 
+    max-width: 400px; 
+    margin-bottom: 57px;
+}
+.main-img {
+    flex-grow: 1;
+}
+.main-img--image {
+    width: 100%;
+
+}
+.main-text--link {
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 32px;
+    font-weight: 500; 
+    transition: .2s ease background-color; 
+}
+.main-text--link:hover {
+    color: var(--white);
+    background-color: var(--purple);
+}
+ 
